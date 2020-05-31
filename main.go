@@ -11,6 +11,9 @@ import (
 	"./exercises/htree"
 )
 
+import "C"
+
+//export HTreeClient
 func HTreeClient() {
 	fmt.Println(htree.Description())
 	reader := bufio.NewReader(os.Stdin)
